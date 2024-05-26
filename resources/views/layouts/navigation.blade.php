@@ -43,7 +43,7 @@
 
         @if (!auth()->check())
           <a href="{{route('budget.new')}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Pedir Orçamento</a>
-          <a href="{{route('login')}}" style="margin-left: 5px" class="bg-transparent focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center border text-blue-600 border-blue-600">Login</a>
+          <a href="{{route('login')}}" class="bg-transparent focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center border text-blue-600 border-blue-600">Login</a>
         @else
 
         <li class="flex items-center">

@@ -11,6 +11,7 @@ class NavigationController extends Controller
     }
 
     public function dashboard(){
-        return view('dashboard');
+        return redirect('/');
+        // return view('dashboard');
     }
 }
