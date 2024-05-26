@@ -4,11 +4,11 @@
         @include('layouts.navigation')
 
 
-<div class="relative overflow-x-auto min-h-screen" style="min-height: 70vh!important">
+<div class="relative min-h-screen" style="min-height: 70vh!important">
     <h1 class="text-center text-5xl mb-10 dark:text-white sm:text-white lg:text-gray-900 xl:text-gray-900" style="margin-top:150px">Orçamentos</h1>
-    <div class="table-budget dark:bg-gray-800 bg-gray-50">
-        @if(!empty($budget))
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+    <div class="table-budget dark:bg-gray-800 bg-gray-50 overflow-x-auto">
+        @if(!empty($budgets))
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
                         <th scope="col" class="px-6 py-3">
