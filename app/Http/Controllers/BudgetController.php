@@ -41,4 +41,20 @@ class BudgetController extends Controller
             return back()->with('error', 'Não foi possível enviar orçamento. Tente novamente mais tarde');
         }
     }
+
+    public function mark_answered(Request $request){
+        try{
+            $budget = Budget::find($request->id);
+
+            if(!$budget)
+                return response()->json(['error' => $e]);
+
+            $budget->analyzed = !$budget->analyzed;
+            $budget->save();
+
+            return response()->json(['success' => true, 'type' => $budget->analyzed]);
+        }catch(Exeption $e){
+            return response()->json(['error' => $e]);
+        }
+    }
 }

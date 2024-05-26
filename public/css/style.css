@@ -3,11 +3,16 @@
     --padding-horizontal: 0 200px 0 200px;
     --margin-table: 0 400px 100px 400px;
     --width-form: 700px;
+    --width-table: 60%;
 }
 
 nav, footer, .container-galery, .menus-card{
     padding: var(--padding-horizontal);
     width: 100%;
+}
+
+table{
+    font-size: 20px;
 }
 
 footer{
@@ -92,7 +97,8 @@ h2.title{
 
 .table-budget{
     border-radius: 20px;
-    margin: var(--margin-table);
+    width: var(--width-table);
+    margin: 150px auto;
 }
 
 table{
@@ -108,10 +114,6 @@ figure{
         --padding-home: 250px 100px 0 100px;
         --padding-horizontal: 0 100px 0 100px;
     }
-
-    .form-budget{
-
-    }
 }
 
 @media screen and (max-width: 1308px) {
@@ -119,6 +121,7 @@ figure{
         --padding-home: 250px 50px 0 50px;
         --padding-horizontal: 0 50px 0 50px;
         --margin-table: 0 200px 100px 200px;
+        --width-table: 90%;
     }
 }
 
@@ -134,6 +137,7 @@ figure{
         --padding-home: 150px 50px 0 50px;
         --margin-table: 0 50px 100px 50px;
         --width-form: 100%;
+        --width-table: 100%;
     }
 
     .img-home{

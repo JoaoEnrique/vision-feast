@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('phone', 13);
             $table->date('date');
             $table->integer('quantity_people')->unsigned();
+            $table->integer('analyzed')->default(0)->unsigned();
             $table->id();
             $table->timestamps();
         });

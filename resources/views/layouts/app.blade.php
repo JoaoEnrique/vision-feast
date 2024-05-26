@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-        <link rel="stylesheet" href="{{asset('css/style.css?v1=1')}}">
+        <link rel="stylesheet" href="{{asset('css/style.css?v1=8')}}">
         <link rel="shortcut icon" href="{{asset('img/logo.jpg')}}" type="image/x-icon">
 
         <!-- Scripts -->
@@ -24,7 +24,7 @@
 
 
         {{-- jquery --}}
-        {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> --}}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
         {{-- efeito aparecer --}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
