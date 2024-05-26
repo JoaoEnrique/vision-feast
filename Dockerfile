@@ -1,4 +1,5 @@
 FROM richarvey/nginx-php-fpm:latest
+FROM node:16-buster
 
 COPY . .
 
