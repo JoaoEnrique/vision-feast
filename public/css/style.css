@@ -1,0 +1,231 @@
+:root{
+    --padding-home: 250px 200px 0 200px;
+    --padding-horizontal: 0 200px 0 200px;
+    --margin-table: 0 400px 100px 400px;
+}
+
+nav, footer, .container-galery, .menus-card{
+    padding: var(--padding-horizontal);
+    width: 100%;
+}
+
+footer{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home-page{
+    padding: var(--padding-home);
+    min-height: 95vh;
+}
+
+.overlay{
+    display: none;
+}
+
+.menus{
+    min-height: 500px;
+}
+
+.modal{
+    max-height: 90vh!important;
+}
+
+h2.title{
+    padding-top: 100px!important;
+}
+
+
+.modal-body{
+    max-height: 600px;
+    overflow:auto;
+}
+
+.menus-card{
+
+    padding-bottom : 100px!important;
+}
+
+.menus-card h5{
+    text-align: center;
+}
+
+.logo-menu{
+    height: 60px;
+    border-radius: 50%;
+}
+
+.img-home{
+    border-radius: 20px;
+    height: 350px;
+}
+
+.home-page h1.title{
+    font-weight: 500;
+    background-image: linear-gradient(282deg, rgb(106, 109, 133) 0%, rgb(12, 15, 35) 100%);
+    background-clip: text;
+}
+
+.home-page p.text{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.home-page .btn{
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 20px 40px;
+    width: 200px;
+}
+
+.form-budget{
+    margin: 150px 400px 100px 400px;
+    padding: 40px 50px;
+    border-radius: 20px;
+}
+
+.table-budget{
+    border-radius: 20px;
+    margin: var(--margin-table);
+}
+
+table{
+    padding: 5px;
+}
+
+figure{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1653px) {
+    :root{
+        --padding-home: 250px 100px 0 100px;
+        --padding-horizontal: 0 100px 0 100px;
+    }
+}
+
+@media screen and (max-width: 1308px) {
+    :root{
+        --padding-home: 250px 50px 0 50px;
+        --padding-horizontal: 0 50px 0 50px;
+        --margin-table: 0 200px 100px 200px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    :root{
+        --padding-home: 150px 50px 0 50px;
+        --margin-table: 0 100px 100px 100px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    :root{
+        --padding-home: 150px 50px 0 50px;
+        --margin-table: 0 50px 100px 50px;
+    }
+
+    .img-home{
+        height: 300px;
+    }
+
+    .menus-card{
+        overflow-x: auto;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    :root{
+        --padding-home: 100px 5px 0 5px;
+        --margin-table: 0 0 0 0;
+    }
+
+    .img-home{
+        height: 250px;
+    }
+
+    /* homepage */
+    .home-page{
+        background-image: url('http://192.168.1.107:8000/img/galery/9.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 2;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 70%); /* Ajuste a opacidade conforme necessário */
+        z-index: 1;
+        display: block!important;
+    }
+
+    .container-galery{
+        overflow: auto;
+    }
+
+    .gallery{
+        width: 500px;
+    }
+
+    .content-home-page{
+        position: absolute;
+        z-index: 10;
+        top: 100px;
+    }
+    .none-cel{
+        display: none!important;
+    }
+
+    nav{
+        background: transparent!important;
+    }
+
+    .home-page .btn{
+        font-size: 15px;
+        width: 150px;
+    }
+
+    .scrolled-dark {
+        --tw-bg-opacity: 1;
+        background-color: rgb(17 24 39 / var(--tw-bg-opacity))!important;
+    }
+
+    .scrolled-light{
+        --tw-bg-opacity: 1;
+        background-color: rgb(243 244 246 / var(--tw-bg-opacity))!important
+    }
+
+    h2.title{
+        font-size: 60px!important;
+    }
+
+    footer{
+        padding-top: 100px;
+    }
+
+    .content-home-page *, .name-menu{
+        color: #fff;
+    }
+
+    .menus-card div{
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .img-home{
+        height: 150px;
+    }
+}
+
+
