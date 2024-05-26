@@ -1,5 +1,4 @@
 FROM richarvey/nginx-php-fpm:latest
-FROM node:16-buster
 
 COPY . .
 
@@ -17,10 +16,5 @@ ENV LOG_CHANNEL stderr
 
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER 1
-
-# Instale dependências do Node.js e execute o build do Vite
-RUN apt-get update && apt-get install -y nodejs npm
-RUN npm install
-RUN npm run build
 
 CMD ["/start.sh"]
