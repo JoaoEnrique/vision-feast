@@ -2,6 +2,7 @@
     --padding-home: 250px 200px 0 200px;
     --padding-horizontal: 0 200px 0 200px;
     --margin-table: 0 400px 100px 400px;
+    --width-form: 700px;
 }
 
 nav, footer, .container-galery, .menus-card{
@@ -83,7 +84,8 @@ h2.title{
 }
 
 .form-budget{
-    margin: 150px 400px 100px 400px;
+    width: var(--width-form);
+    margin: 150px auto;
     padding: 40px 50px;
     border-radius: 20px;
 }
@@ -106,6 +108,10 @@ figure{
         --padding-home: 250px 100px 0 100px;
         --padding-horizontal: 0 100px 0 100px;
     }
+
+    .form-budget{
+
+    }
 }
 
 @media screen and (max-width: 1308px) {
@@ -127,6 +133,7 @@ figure{
     :root{
         --padding-home: 150px 50px 0 50px;
         --margin-table: 0 50px 100px 50px;
+        --width-form: 100%;
     }
 
     .img-home{
