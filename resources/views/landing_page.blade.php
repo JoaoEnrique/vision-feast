@@ -24,4 +24,13 @@
             </a>
         </div>
     </div>
+
+
+    <style>
+        @media screen and (max-width: 610px) {
+            .home-page{
+                background-image: url({{asset('img/galery/9.jpg')}})!important;
+            }
+        }
+    </style>
 </section>
