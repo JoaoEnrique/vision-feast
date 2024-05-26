@@ -10,7 +10,7 @@ services:
       PHP_ERRORS_STDERR: 1
       RUN_SCRIPTS: 1
       REAL_IP_HEADER: 1
-      APP_ENV: local
+      APP_ENV: production
       APP_DEBUG: true
       LOG_CHANNEL: stderr
       COMPOSER_ALLOW_SUPERUSER: 1
