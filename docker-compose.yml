@@ -3,7 +3,7 @@ version: '3.8'
 services:
   app:
     build: .
-    container_name: laravel_app
+    container_name: vision_app
     environment:
       SKIP_COMPOSER: 1
       WEBROOT: /var/www/html/public
@@ -21,7 +21,7 @@ services:
 
   db:
     image: mysql:5.7
-    container_name: mysql_db
+    container_name: vision_mysql
     environment:
       MYSQL_DATABASE: laravel
       MYSQL_USER: laraveluser
